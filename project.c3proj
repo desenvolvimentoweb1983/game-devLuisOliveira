@@ -15,6 +15,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Browser",
+			"name": "Navegador",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Teclado",
 			"author": "Scirra",
@@ -117,7 +124,9 @@
 			"esquerdaMobile",
 			"direitaMobile",
 			"puloMobile",
-			"Toque"
+			"Toque",
+			"fullScreenMobile",
+			"Navegador"
 		],
 		"subfolders": []
 	},
@@ -142,7 +151,88 @@
 	},
 	"rootFileFolders": {
 		"script": {
-			"items": [],
+			"items": [
+				{
+					"name": "c3main.js",
+					"type": "application/javascript",
+					"sid": 669755952312874,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "register-sw.js",
+					"type": "application/javascript",
+					"sid": 295560068302100,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "main.js",
+					"type": "application/javascript",
+					"sid": 574153656089848,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "offlineclient.js",
+					"type": "application/javascript",
+					"sid": 676503665333030,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "supportcheck.js",
+					"type": "application/javascript",
+					"sid": 228129785860666,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "objRefTable.js",
+					"type": "application/javascript",
+					"sid": 421332635893365,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "c3runtime.js",
+					"type": "application/javascript",
+					"sid": 450072458041985,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "modernjscheck.js",
+					"type": "application/javascript",
+					"sid": 932612016569581,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "dispatchworker.js",
+					"type": "application/javascript",
+					"sid": 147735617059094,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "jobworker.js",
+					"type": "application/javascript",
+					"sid": 685860482292833,
+					"script-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"sound": {

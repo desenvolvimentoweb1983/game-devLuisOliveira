@@ -745,6 +745,40 @@
 				}
 			],
 			"sid": 453603913819849
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Toque",
+					"sid": 954015617130842,
+					"parameters": {
+						"object": "fullScreenMobile",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "request-fullscreen",
+					"objectClass": "Navegador",
+					"sid": 411708311596136,
+					"parameters": {
+						"mode": "stretch-letterbox-scale",
+						"navigation-ui": "auto"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "fullScreenMobile",
+					"sid": 166817318492142,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 126878359760849
 		}
 	],
 	"sid": 814477922650509
