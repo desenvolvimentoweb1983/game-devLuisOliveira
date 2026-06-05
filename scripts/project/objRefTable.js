@@ -13,6 +13,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Anchor,
 		C3.Plugins.Audio,
 		C3.Plugins.Touch,
+		C3.Plugins.Browser,
 		C3.Plugins.Sprite.Cnds.CompareY,
 		C3.Plugins.Sprite.Acts.SetVisible,
 		C3.Plugins.Audio.Acts.Play,
@@ -27,7 +28,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Exps.Y,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.Touch.Cnds.IsTouchingObject,
-		C3.Behaviors.Platform.Acts.SimulateControl
+		C3.Behaviors.Platform.Acts.SimulateControl,
+		C3.Plugins.Touch.Cnds.OnTouchObject,
+		C3.Plugins.Browser.Acts.RequestFullScreen
 	];
 };
 self.C3_JsPropNameTable = [
@@ -62,6 +65,8 @@ self.C3_JsPropNameTable = [
 	{direitaMobile: 0},
 	{puloMobile: 0},
 	{Toque: 0},
+	{fullScreenMobile: 0},
+	{Navegador: 0},
 	{contadorDePontos: 0}
 ];
 
@@ -89,5 +94,7 @@ self.InstanceType = {
 	esquerdaMobile: class extends self.ISpriteInstance {},
 	direitaMobile: class extends self.ISpriteInstance {},
 	puloMobile: class extends self.ISpriteInstance {},
-	Toque: class extends self.IInstance {}
+	Toque: class extends self.IInstance {},
+	fullScreenMobile: class extends self.ISpriteInstance {},
+	Navegador: class extends self.IInstance {}
 }

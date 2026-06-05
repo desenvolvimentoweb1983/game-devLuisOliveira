@@ -757,28 +757,106 @@
 						"object": "fullScreenMobile",
 						"type": "start"
 					}
+				},
+				{
+					"id": "is-fullscreen",
+					"objectClass": "Navegador",
+					"sid": 144842405530664,
+					"isInverted": true
 				}
 			],
 			"actions": [
 				{
 					"id": "request-fullscreen",
 					"objectClass": "Navegador",
-					"sid": 411708311596136,
+					"sid": 662629630653627,
 					"parameters": {
 						"mode": "stretch-letterbox-scale",
 						"navigation-ui": "auto"
 					}
+				}
+			],
+			"sid": 126878359760849
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Toque",
+					"sid": 313379369213431,
+					"parameters": {
+						"object": "fullScreenMobile",
+						"type": "start"
+					}
 				},
+				{
+					"id": "is-fullscreen",
+					"objectClass": "Navegador",
+					"sid": 541955111210861
+				}
+			],
+			"actions": [
+				{
+					"id": "cancel-fullscreen",
+					"objectClass": "Navegador",
+					"sid": 263727710968860
+				}
+			],
+			"sid": 976402024771806
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 844710829527708
+				},
+				{
+					"id": "is-fullscreen",
+					"objectClass": "Navegador",
+					"sid": 511695048581658
+				}
+			],
+			"actions": [
 				{
 					"id": "set-visible",
 					"objectClass": "fullScreenMobile",
-					"sid": 166817318492142,
+					"sid": 429186571416694,
 					"parameters": {
 						"visibility": "invisible"
 					}
 				}
 			],
-			"sid": 126878359760849
+			"sid": 367532092021951
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 572556780319999
+				},
+				{
+					"id": "is-fullscreen",
+					"objectClass": "Navegador",
+					"sid": 607258831091994,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "fullScreenMobile",
+					"sid": 107929558446757,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 547745622563157
 		}
 	],
 	"sid": 814477922650509

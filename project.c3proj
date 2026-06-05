@@ -233,7 +233,94 @@
 					}
 				}
 			],
-			"subfolders": []
+			"subfolders": [
+				{
+					"items": [
+						{
+							"name": "c3main.js",
+							"type": "application/javascript",
+							"sid": 694758039358464,
+							"script-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "jobworker.js",
+							"type": "application/javascript",
+							"sid": 570279004965373,
+							"script-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "main.js",
+							"type": "application/javascript",
+							"sid": 468357594681137,
+							"script-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "register-sw.js",
+							"type": "application/javascript",
+							"sid": 801520307757551,
+							"script-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "offlineclient.js",
+							"type": "application/javascript",
+							"sid": 323061998467424,
+							"script-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "supportcheck.js",
+							"type": "application/javascript",
+							"sid": 478926424159489,
+							"script-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "objRefTable.js",
+							"type": "application/javascript",
+							"sid": 177388767746067,
+							"script-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "c3runtime.js",
+							"type": "application/javascript",
+							"sid": 685085899614525,
+							"script-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "modernjscheck.js",
+							"type": "application/javascript",
+							"sid": 529466608919630,
+							"script-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "dispatchworker.js",
+							"type": "application/javascript",
+							"sid": 817431262778041,
+							"script-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "project"
+				}
+			]
 		},
 		"sound": {
 			"items": [
