@@ -1,0 +1,66 @@
+{
+	"name": "aprenderConstruct3",
+	"plugin-id": "Sprite",
+	"sid": 130686817702261,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Âncora",
+			"sid": 328988921877529
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1536,
+						"height": 1024,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4861943,
+						"collisionPoly": {
+							"points": [
+								0.505859375,
+								0.169921875,
+								0.8216145833333334,
+								0.2158203125,
+								0.8580729166666666,
+								0.2578125,
+								0.9641927083333334,
+								0.9521484375,
+								0.8743489583333334,
+								0.9521484375,
+								0.20963541666666666,
+								0.71484375,
+								0.17122395833333334,
+								0.681640625,
+								0.19466145833333334,
+								0.1923828125
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 127772525084317,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

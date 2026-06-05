@@ -1,0 +1,70 @@
+{
+	"name": "gramadinhoVerde",
+	"plugin-id": "Sprite",
+	"sid": 458608069810464,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1500,
+						"height": 310,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5206473,
+						"collisionPoly": {
+							"points": [
+								0.36466666666666664,
+								0.1967741935483871,
+								0.738,
+								0.24516129032258063,
+								0.7893333333333333,
+								0.34838709677419355,
+								0.8106666666666666,
+								0.4870967741935484,
+								0.78,
+								0.8612903225806452,
+								0.7306666666666667,
+								0.9870967741935484,
+								0.606,
+								1,
+								0.42333333333333334,
+								1,
+								0.30933333333333335,
+								0.9741935483870968,
+								0.2693333333333333,
+								0.9387096774193548,
+								0.21933333333333332,
+								0.35161290322580646,
+								0.25333333333333335,
+								0.22258064516129034,
+								0.318,
+								0.2032258064516129
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 636498926971326,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

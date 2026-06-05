@@ -1,0 +1,60 @@
+{
+	"name": "esquerdaMobile",
+	"plugin-id": "Sprite",
+	"sid": 885083509712182,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 512,
+						"height": 512,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 690620,
+						"collisionPoly": {
+							"points": [
+								0.2451171875,
+								0.08203125,
+								0.75,
+								0.08203125,
+								0.875,
+								0.1435546875,
+								0.9462890625,
+								0.9521484375,
+								0.8115234375,
+								0.9521484375,
+								0.390625,
+								0.857421875,
+								0.35546875,
+								0.8232421875,
+								0.1484375,
+								0.1162109375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 606895492795063,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

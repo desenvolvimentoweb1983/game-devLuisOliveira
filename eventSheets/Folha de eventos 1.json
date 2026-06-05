@@ -1,0 +1,751 @@
+{
+	"name": "Folha de eventos 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "contadorDePontos",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 970557997066938
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-y",
+					"objectClass": "robotTeen",
+					"sid": 728394189746884,
+					"parameters": {
+						"comparison": 4,
+						"y-co-ordinate": "844"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "gameOver",
+					"sid": 321779138625939,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 283995876903555,
+					"parameters": {
+						"audio-file": {
+							"path": "dragon-studio-game-over-retro-8bit-sfx-499656"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 543456836538910,
+					"parameters": {
+						"seconds": "4.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 326348502754345
+				}
+			],
+			"sid": 769912355782650
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 479351900394816,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "robotTeen",
+					"sid": 727920940298903,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 130642199855374
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 243834219485843,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "robotTeen",
+					"sid": 782481919346304,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 418628700115273
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "robotTeen",
+					"sid": 561005332084217,
+					"parameters": {
+						"object": "moedasRetro"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 549796142178610,
+					"parameters": {
+						"audio-file": {
+							"path": "universfield-spinning-coin-on-table-352448"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "moedasRetro",
+					"sid": 681185994434757
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 463627012633640,
+					"parameters": {
+						"variable": "contadorDePontos",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "contagemPontosTexto",
+					"sid": 636691101173897,
+					"parameters": {
+						"text": "\"Pontos: \"&contadorDePontos"
+					}
+				}
+			],
+			"sid": 276302581195217
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "robotTeen",
+					"sid": 116641257103742,
+					"parameters": {
+						"object": "diamanteGrande"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 795356186866655,
+					"parameters": {
+						"audio-file": {
+							"path": "universfield-spinning-coin-on-table-352448"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "diamanteGrande",
+					"sid": 798779850251314
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 699805680541648,
+					"parameters": {
+						"variable": "contadorDePontos",
+						"value": "100"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "contagemPontosTexto",
+					"sid": 320575130432590,
+					"parameters": {
+						"text": "\"Pontos: \"&contadorDePontos"
+					}
+				}
+			],
+			"sid": 592617099635738
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "robotTeen",
+					"sid": 182542802084645,
+					"parameters": {
+						"object": "cristaisMina"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 820195438102314,
+					"parameters": {
+						"audio-file": {
+							"path": "universfield-spinning-coin-on-table-352448"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "cristaisMina",
+					"sid": 263756304771566
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 509748523965871,
+					"parameters": {
+						"variable": "contadorDePontos",
+						"value": "1000"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "contagemPontosTexto",
+					"sid": 645865324566189,
+					"parameters": {
+						"text": "\"Pontos: \"&contadorDePontos"
+					}
+				}
+			],
+			"sid": 864911027148894
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "robotTeen",
+					"sid": 344684453589699,
+					"parameters": {
+						"object": "joystic"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 985905690119184,
+					"parameters": {
+						"audio-file": {
+							"path": "u_3ay6aijdt2-bell1-445873"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "joystic",
+					"sid": 976130915780330
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "aprenderConstruct3",
+					"sid": 693229294460606,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 341656943642046,
+					"parameters": {
+						"seconds": "3.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "aprenderConstruct3",
+					"sid": 692471354177870,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 639505084430777
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "inimigoAlien",
+					"sid": 147128904697324,
+					"parameters": {
+						"object": "robotTeen"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "robotTeen",
+					"sid": 637148012714375,
+					"parameters": {
+						"comparison": 5,
+						"y-co-ordinate": "inimigoAlien.Y-20"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "gameOver",
+					"sid": 645855529142610,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 726890021083131,
+					"parameters": {
+						"audio-file": {
+							"path": "dragon-studio-game-over-retro-8bit-sfx-499656"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 572148457302599,
+					"parameters": {
+						"seconds": "4.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 676764740876203
+				}
+			],
+			"sid": 171525827497439
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "monstrinhoAlien",
+					"sid": 500197054850710,
+					"parameters": {
+						"object": "robotTeen"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "robotTeen",
+					"sid": 352889887402561,
+					"parameters": {
+						"comparison": 5,
+						"y-co-ordinate": "monstrinhoAlien.Y-20"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "gameOver",
+					"sid": 297027387881271,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 566249696079224,
+					"parameters": {
+						"audio-file": {
+							"path": "dragon-studio-game-over-retro-8bit-sfx-499656"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 396630468661273,
+					"parameters": {
+						"seconds": "4.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 614342105542119
+				}
+			],
+			"sid": 281214452203149
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "robotTeen",
+					"sid": 430140322783853,
+					"parameters": {
+						"object": "inimigoAlien"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "robotTeen",
+					"sid": 392961417891574,
+					"parameters": {
+						"comparison": 3,
+						"y-co-ordinate": "inimigoAlien.Y -  20"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 303854570010183,
+					"parameters": {
+						"audio-file": {
+							"path": "scottishperson-sound-effect-scream-thump-groan-159317"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "inimigoAlien",
+					"sid": 579416227078696
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 776355611648630,
+					"parameters": {
+						"variable": "contadorDePontos",
+						"value": "100"
+					}
+				}
+			],
+			"sid": 622905197463390
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "robotTeen",
+					"sid": 455401716933476,
+					"parameters": {
+						"object": "monstrinhoAlien"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "robotTeen",
+					"sid": 182175296115189,
+					"parameters": {
+						"comparison": 3,
+						"y-co-ordinate": "monstrinhoAlien.Y - 20"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "monstrinhoAlien",
+					"sid": 432613489262344
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 484113911635971,
+					"parameters": {
+						"variable": "contadorDePontos",
+						"value": "1000"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 568284810967690,
+					"parameters": {
+						"audio-file": {
+							"path": "scottishperson-sound-effect-scream-thump-groan-159317"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 812384179590360
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "robotTeen",
+					"sid": 329857978376524,
+					"parameters": {
+						"object": "bandeiraFinal"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 859368626747111,
+					"parameters": {
+						"audio-file": {
+							"path": "freesound_community-success-fanfare-trumpets-6185"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "vitoria",
+					"sid": 945459004952901,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 983251011432104,
+					"parameters": {
+						"seconds": "4.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 868716498016294
+				}
+			],
+			"sid": 646966200904893
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 620237164762224
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 107002533601784,
+					"parameters": {
+						"audio-file": {
+							"path": "backgroundmusicmaster-pixel-adventure-382649"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 434282427635941
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 863268164419463
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 555555341197144,
+					"parameters": {
+						"key": 38
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 282197552803298,
+					"parameters": {
+						"audio-file": {
+							"path": "freesound_community-jump-sound-14839"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 482004847958727
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Toque",
+					"sid": 111667655520606,
+					"parameters": {
+						"object": "esquerdaMobile"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "robotTeen",
+					"sid": 608085126912301,
+					"behaviorType": "Plataforma",
+					"parameters": {
+						"control": "left"
+					}
+				}
+			],
+			"sid": 246038322792833
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Toque",
+					"sid": 574838183379990,
+					"parameters": {
+						"object": "direitaMobile"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "robotTeen",
+					"sid": 885135923168982,
+					"behaviorType": "Plataforma",
+					"parameters": {
+						"control": "right"
+					}
+				}
+			],
+			"sid": 619449209945431
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Toque",
+					"sid": 509378478223894,
+					"parameters": {
+						"object": "puloMobile"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "robotTeen",
+					"sid": 582715191070941,
+					"behaviorType": "Plataforma",
+					"parameters": {
+						"control": "jump"
+					}
+				}
+			],
+			"sid": 453603913819849
+		}
+	],
+	"sid": 814477922650509
+}

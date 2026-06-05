@@ -1,0 +1,58 @@
+{
+	"name": "joystic",
+	"plugin-id": "Sprite",
+	"sid": 978995705726276,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1024,
+						"height": 1024,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9640569,
+						"collisionPoly": {
+							"points": [
+								0.5634765625,
+								0.1083984375,
+								0.6484375,
+								0.150390625,
+								0.8271484375,
+								0.7431640625,
+								0.5869140625,
+								0.8603515625,
+								0.53515625,
+								0.859375,
+								0.1416015625,
+								0.6796875,
+								0.4873046875,
+								0.1201171875
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 796354297625513,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

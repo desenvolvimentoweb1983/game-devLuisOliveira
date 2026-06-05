@@ -1,0 +1,16 @@
+{
+	"name": "contagemPontosTexto",
+	"plugin-id": "Text",
+	"sid": 277081145107282,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Âncora",
+			"sid": 507229764930118
+		}
+	],
+	"effectTypes": []
+}
